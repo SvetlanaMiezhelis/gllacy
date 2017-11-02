@@ -1,7 +1,7 @@
 ﻿# Личный проект «Глейси»
 
 * Студент: [Svetlana Miezhelis](https://up.htmlacademy.ru/htmlcss/19/user/369121).
-* Наставник: `Андрей Захарченко`.
+* Наставник: `Андрей Захарченко`. ( https://htmlacademy.ru/profile/drewtsure )
 
 ---
 
