@@ -1,15 +1,61 @@
+@import "normalize.less";
+
+
 body{
   margin: 0;
   padding: 0;
   font-family: "Roboto","Arial", sans-serif;
   background-color: #849d8f;
+
+  li{
+    list-style: none;
+  }
 }
 
 .btn{
-  font: inherit;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  padding: 11px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+
+  background: linear-gradient( 0deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
+
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  transform: matrix( 1.04013375779322,0,0,1.04013375779322,0,0);
+}
+
+.btn:hover,
+.btn:focus{
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  transform: matrix( 1.04013375779322,0,0,1.04013375779322,0,0);
+
+  background: linear-gradient(0deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
+}
+
+.btn:active{
+  color: rgb(252, 238, 236);
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  transform: matrix( 1.04013375779322,0,0,1.04013375779322,0,0);
+
+  background: linear-gradient( 0deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  box-shadow: inset 2px 0 2px  rgba(148, 39, 24, 0.004);
+}
+
+.container{
+  width: 1146px;
+  margin: 0 auto;
 }
 
 .main-navigation{
+  color: #fff;
+  a{
+    color: #fff;
+  }
 
 }
 
@@ -36,10 +82,18 @@ body{
   background-size: contain;
   height: 585px;
 
+  .btn{
+    font-size: 32px;
+    line-height: 44px;
+    padding: 12px 40px;
+  }
+
   .slide_title{
     font-size: 60px;
     line-height: 60px;
   }
+
+  
 }
 
 .green-slide{
@@ -111,10 +165,11 @@ body{
   }
 }
 
-.features{
+.features-wrapper{
   background-image: url("../../img/wafer.jpg");
   background-color: #e5d4ad;
   background-position: center;
+  border-radius: 20px;
 
   .features_title{
     font-weight: 500;
@@ -136,4 +191,186 @@ body{
     }
   }
 }
+
+
+
+
+
+.news-blog{
+  height: 220px;
+  background-image: url("../../img/blog-bg.jpg");
+  background-color: #fff;
+  background-position: center right;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+
+  .news-blog_descr{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  a{
+    color: #000;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  a:hover,
+  a:focus,
+  a:active{
+    color: #e84d37;
+  }
+}
+
+.subscribe{
+  height: 205px;
+  background:
+  repeating-linear-gradient(-45deg, #f8f7f4, #F8F7F4 10px, #92cdff 0px, #92cdff 20px, #f8f7f4 0px, #F8F7F4 30px,#fe9e90 0px,#fe9e90 40px);
+  padding: 7px;
+  border-radius: 20px;
+
+
+
+  .subscribe-wrapper{
+    background-color: #f8f7f4;
+    height: 100%;
+    border-radius: 20px;
+
+  }
+
+  .subscribe_descr{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #6f6f6f;
+    margin: 0;
+
+  }
+
+  .email{
+    padding: 15px;
+    border: 1px solid #d3d3d2;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 5px;
+    width: 365px;
+
+  }
+}
+
+
+.map{
+  background-image: url("../../img/map.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 430px;
+
+  .contacts{
+    color: #000;
+    background-color: #fefefe;
+    border-radius: 20px;
+    max-width: 300px;
+
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    b{
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}
+
+.main-footer{
+  color: #fff;
+
+  li{
+    list-style: none;
+  }
+
+  a,p{
+    color: #fff;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  p{
+   font-size: 12px;
+ }
+}
+
+
+.catalog{
+  color:#fff;
+
+  a{
+    color: #fff;
+  }
+}
+
+.main-title{
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.filters{
+
+  label, h2{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .params{
+    background-color: #aabcb2;
+    color: #fff;
+    padding: 7px 14px;
+    border-radius: 20px;
+  }
+
+
+  option, select:focus{
+    background-color: #fff;
+    color: #000;
+  }
+
+  .params-btn{
+    padding: 6px 25px;
+    border: 2px solid #fff;
+    font-weight: 500;
+  }
+
+  .params-btn:hover,
+  .params-btn:focus{
+   background-color: #fff;
+   color: #000;
+ }
+
+ .params-btn:active{
+  box-shadow:inset 0px 2px 0px 1px rgba(105,105,105,0.9);
+  padding: 8px 27px;
+  border: none;
+ }
+}
+
+.page-number{
+  a{
+    text-decoration:  none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+}
+
 
