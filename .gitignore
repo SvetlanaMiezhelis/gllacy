@@ -7,4 +7,4 @@
 *.sublime*
 node_modules/
 Thumbs.db
-*.config
+prepros-6.config
