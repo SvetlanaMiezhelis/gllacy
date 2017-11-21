@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-  <link href="style/css/style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="catalog">
 
@@ -90,7 +90,7 @@
       <article class="filters">
 
         <form>
-          <label for="sorting">Сортировка:</label>
+          <label for="sorting" class="filters_title">Сортировка:</label>
 
           <select name="sorting" id="sorting" class="params">
             <option value="popular">по популярности</option>
@@ -101,7 +101,7 @@
 
 
           <div class="range">
-            <h2>Цена: 100 руб. – 500 руб.</h2>
+            <h2 class="filters_title">Цена: 100 руб. – 500 руб.</h2>
             <div class="params">
               <div class="range-line" >
                 <div class="range-bubble"></div>
@@ -111,7 +111,7 @@
           </div>
 
 
-          <h2>Жирность:</h2>
+          <h2 class="filters_title">Жирность:</h2>
           <ul class="fat params">
             <li>
               <input type="radio" id="fat-free" name="fat" value="0"/>
@@ -135,8 +135,8 @@
           </ul>
 
 
-          <div class="fillers ">
-            <h2>Наполнители:</h2>
+          <div class="fillers">
+            <h2 class="filters_title">Наполнители:</h2>
             <ul class="params">
               <li>
                 <input type="checkbox" id="choco-fill" name="choco-fill" value="choco-fill" checked/>
