@@ -90,14 +90,15 @@
       <article class="filters">
 
         <form>
-          <label for="sorting" class="filters_title">Сортировка:</label>
-
-          <select name="sorting" id="sorting" class="params">
-            <option value="popular">по популярности</option>
-            <option value="cheapest">сначала недорогие</option>
-            <option value="expensive">сначала дорогие</option>
-            <option value="fat">по жирности</option>
-          </select>
+          <div class="filters-type">
+            <label for="sorting" class="filters_title">Сортировка:</label>
+            <select name="sorting" id="sorting" class="params">
+              <option value="popular">по популярности</option>
+              <option value="cheapest">сначала недорогие</option>
+              <option value="expensive">сначала дорогие</option>
+              <option value="fat">по жирности</option>
+            </select>
+          </div>
 
 
           <div class="range">
@@ -110,29 +111,30 @@
             </div>
           </div>
 
+          <div class="filters-type">
+            <h2 class="filters_title">Жирность:</h2>
+            <ul class="fat params">
+              <li>
+                <input type="radio" id="fat-free" name="fat" value="0"/>
+                <label for="fat-free">0%</label>
+              </li>
 
-          <h2 class="filters_title">Жирность:</h2>
-          <ul class="fat params">
-            <li>
-              <input type="radio" id="fat-free" name="fat" value="0"/>
-              <label for="fat-free">0%</label>
-            </li>
+              <li>
+                <input type="radio" id="less-10" name="fat" value="less-10"/>
+                <label for="less-10">до 10%</label>
+              </li>
 
-            <li>
-              <input type="radio" id="less-10" name="fat" value="less-10"/>
-              <label for="less-10">до 10%</label>
-            </li>
+              <li>
+                <input type="radio" id="less-30" name="fat" value="less-30"/>
+                <label for="less-30">до 30%</label>
+              </li>
 
-            <li>
-              <input type="radio" id="less-30" name="fat" value="less-30"/>
-              <label for="less-30">до 30%</label>
-            </li>
-
-            <li>
-              <input type="radio" id="over-30" name="fat" value="over-30"/>
-              <label for="over-30">свыше 30%</label>
-            </li>
-          </ul>
+              <li>
+                <input type="radio" id="over-30" name="fat" value="over-30"/>
+                <label for="over-30">свыше 30%</label>
+              </li>
+            </ul>
+          </div>
 
 
           <div class="fillers">
@@ -163,7 +165,6 @@
                 <label for="jam-fill">джемы</label>
               </li>
             </ul>
-
           </div>
 
           <button type="submit" class="params params-btn">Применить</button>
@@ -314,6 +315,8 @@
         <ul>
           <li><a href="#">Для поставщиков</a></li>
           <li><a href="#">О производстве </a></li>
+        </ul>
+        <ul>
           <li><a href="#">Наши документы</a></li>
           <li><a href="#">Экологические стандарты</a></li>
         </ul>
