@@ -152,7 +152,7 @@
         <article class="assortment-item hit">
           <div class="assortment_img-price-box">
             <img src="img/creamy-orange.jpg" width="268" height="268" alt="Сливочное с апельсином">
-            <span class="assortment_price">310p/кг</span>
+            <span class="assortment_price">310&#8381/кг</span>
           </div>
 
           <a href="#" class="assortment_descr">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -162,7 +162,7 @@
         <article class="assortment-item hit">
           <div class="assortment_img-price-box">
             <img src="img/creamy-choco.jpg" width="268" height="268" alt="Сливочно-кофейное">
-            <span class="assortment_price">380р/кг</span>
+            <span class="assortment_price">380&#8381/кг</span>
           </div>
 
           <a href="#" class="assortment_descr">Сливочно-кофейное с кусочками шоколада</a>
@@ -172,7 +172,7 @@
         <article class="assortment-item hit">
           <div class="assortment_img-price-box">
             <img src="img/creamy-strawberry.jpg" width="268" height="268" alt="Сливочно-клубничное">
-            <span class="assortment_price">355р/кг</span>
+            <span class="assortment_price">355&#8381/кг</span>
           </div>
 
           <a href="#" class="assortment_descr">Сливочно-клубничное с присыпкой из белого шоколада</a>
@@ -182,7 +182,7 @@
         <article class="assortment-item hit">
           <div class="assortment_img-price-box">
             <img src="img/creme-brulee.jpg" width="268" height="268" alt="Крем-брюле">
-            <span class="assortment_price">415р/кг</span>
+            <span class="assortment_price">415&#8381/кг</span>
           </div>
 
           <a href="#" class="assortment_descr">Сливочное крем-брюле с карамельной подливкой</a>
@@ -197,24 +197,24 @@
 
         
         <ul class="features-list">
-          <li class="features-item ice-cream">
+          <li class="features-item features_ice-cream">
             <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
               и
             проверенных временем технологий.</p>
           </li>
 
-          <li class="features-item cow">
+          <li class="features-item features_cow">
             <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
             связывает долговременное сотрудничество. </p>
           </li>
 
-          <li class="features-item eco">
+          <li class="features-item features_eco">
             <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
               дополнительные
             ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
           </li>
 
-          <li class="features-item thermo">
+          <li class="features-item features_thermo">
             <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
             растаять в пути и позволяет сохранить превосходный вкус.</p>
           </li>
@@ -266,7 +266,7 @@
           <p>
             (с 10 до 20 ежедневно)
           </p>
-          <a class="btn" href="#">Форма обратной связи</a>
+          <a class="btn feedback-form-open" href="#">Форма обратной связи</a>
         </article>
       </article>
 
@@ -309,18 +309,22 @@
     </div>
   </footer>
 
-  <div class="feedback-form">
+  <div class="feedback-form modal-form">
     <h2 class="feedback-form_title">Мы обязательно вам ответим!</h2>
-    <button class="close"></button>
+    <button class="close modal-close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#231f20" d="M17.454 1.46L16.04.046 9 7.086 1.96.046.546 1.46l7.04 7.04-7.04 7.04 1.414 1.414L9 9.914l7.04 7.04 1.414-1.414-7.04-7.04z"/></svg>
+    </button>
     <form action="https://echo.htmlacademy.ru" method="post">
 
-      <input type="text" name="feedback-name" placeholder="Как вас зовут?" required="">
+      <input type="text" name="feedback-name" placeholder="Как вас зовут?">
       
-      <input type="email" name="email" placeholder="Ваша почта для ответа?" required="">
+      <input type="email" name="email" placeholder="Ваша почта для ответа?">
       
-      <textarea name="feedback-text" placeholder="Напишите что-нибудь..." required=""></textarea>
+      <textarea name="feedback-text" placeholder="Напишите что-нибудь..." ></textarea>
       
+      <div class="feedback_btn-wrapper">
       <button class="btn">Отправить</button>
+      </div>
     </form>
   </div>
 
