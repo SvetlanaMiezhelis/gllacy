@@ -12,14 +12,16 @@
   <div class="container">
     <nav class="main-navigation">
       <div class="main-header-logo">
-        <img src="img/logo.svg" width="155" height="74" alt="Логотип">
+        <a href="index.html">
+          <img src="img/logo.svg" width="155" height="74" alt="Логотип">
+        </a>
       </div>
       <ul class="site-navigation">
 
-        <li class="nav-item"><a href="#">Каталог</a>
+        <li class="nav-item nav-item--active"><a href="#">Каталог</a>
           <ul class="catalog_menu">
             <li><a href="#">Новинки</a></li>
-            <li><a href="#">Сливочное</a></li>
+            <li class="catalog_menu-item--active"><a href="#">Сливочное</a></li>
             <li><a href="#">Щербеты</a></li>
             <li><a href="#">Фруктовый лед</a></li>
             <li><a href="#">Мелорин</a></li>
@@ -68,7 +70,7 @@
         </li>
 
 
-        <li class="basket catalog_basket">
+        <li class="basket catalog_basket" tabindex="0">
           <span class="visually-hidden">Корзина</span>
 
           <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/><circle fill="#343434" cx="6.984" cy="18" r="2"/><circle fill="#343434" cx="15.984" cy="18" r="2"/><path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/></svg>
@@ -128,7 +130,7 @@
 
     <article class="filters">
 
-      <form>
+      <form action="https://echo.htmlacademy.ru" method="get">
         <div class="filters-type indent">
           <h2 class="filters_title">Сортировка:</h2>
           <label class="select-sorting">
@@ -146,7 +148,7 @@
 
         <div class="range indent">
           <h2 class="filters_title">Цена: 100 руб. – 500 руб.</h2>
-          <div class="params">
+          <div class="params" tabindex="0">
             <div class="range-controls">
               <div class="range-line" >
                 <div class="bar"></div>
@@ -391,9 +393,9 @@
       <li><a href="#">4</a></li>
       <li><a href="#">5</a></li>
       <li><a href="#"><span class="visually-hidden">Вперед</span> </a></li>
-  </ul>
+    </ul>
 
-</div>
+  </div>
 </div>
 </div>
 </main>

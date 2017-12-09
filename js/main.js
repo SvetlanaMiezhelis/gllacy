@@ -5,7 +5,7 @@ function initMap() {
 		center: {lat: 59.938809, lng: 30.332294}
 	});
 	var marker = new google.maps.Marker({
-		position: {lat: 59.938809, lng: 30.323342},
+		position: {lat: 59.938556, lng: 30.322941},
 		map: map,
 
 		icon: "img/pin.svg"
@@ -39,7 +39,7 @@ close.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-	if (!name.value || !email.value) {
+	if (!popup.querySelector("[name=feedback-name]").value || !popup.querySelector("[name=email]").value) {
 		evt.preventDefault();
 		popup.classList.remove("modal-error");
 		popup.offsetWidth = popup.offsetWidth;
