@@ -37,7 +37,7 @@
         <li class="search">
           <span class="visually-hidden">Поиск</span>
 
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" class="header-svg" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17" tabindex="0"><path fill="#fff" class="header-svg" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
 
           <div class="search_form-wrapper">
             <form action="https://echo.htmlacademy.ru" method="post" class="search_form">
@@ -70,7 +70,7 @@
         </li>
 
 
-        <li class="basket catalog_basket" tabindex="0">
+        <li class="basket catalog_basket basket--active" tabindex="0">
           <span class="visually-hidden">Корзина</span>
 
           <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/><circle fill="#343434" cx="6.984" cy="18" r="2"/><circle fill="#343434" cx="15.984" cy="18" r="2"/><path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/></svg>
@@ -164,7 +164,7 @@
           <ul class="fat params">
             <li>
 
-              <label class="radio-fat">
+              <label class="radio-fat" tabindex="0">
                 <input type="radio" id="fat-free" name="fat" value="0" class="visually-hidden "/>
                 <span class="radio-indicator"></span>
                 0%
@@ -173,7 +173,7 @@
 
             <li>
 
-              <label class="radio-fat">
+              <label class="radio-fat" tabindex="0">
                <input type="radio" id="less-10" name="fat" value="less-10" class="visually-hidden"/>
                <span class="radio-indicator"></span>
                до 10%
@@ -182,8 +182,8 @@
 
            <li>
 
-            <label class="radio-fat" >
-              <input type="radio" id="less-30" name="fat" value="less-30" class="visually-hidden"/ checked>
+            <label class="radio-fat" tabindex="0">
+              <input type="radio" id="less-30" name="fat" value="less-30" class="visually-hidden" checked />
               <span class="radio-indicator"></span>
               до 30%
             </label>
@@ -191,7 +191,7 @@
 
           <li>
 
-            <label class="radio-fat">
+            <label class="radio-fat" tabindex="0">
               <input type="radio" id="over-30" name="fat" value="over-30" class="visually-hidden"/>
               <span class="radio-indicator"></span>
               свыше 30%
@@ -205,7 +205,7 @@
         <h2 class="filters_title">Наполнители:</h2>
         <ul class="params fillers-list">
           <li>
-            <label class="checkbox-fill">
+            <label class="checkbox-fill" tabindex="0">
               <input type="checkbox" id="choco-fill" name="choco-fill" value="choco-fill" class="visually-hidden" checked/>
               <span class="checkbox-indicator"></span>
               шоколадные
@@ -213,7 +213,7 @@
           </li>
 
           <li>
-            <label class="checkbox-fill">
+            <label class="checkbox-fill" tabindex="0">
               <input type="checkbox" id="sugar-fill" name="sugar-fill" value="sugar-fill" class="visually-hidden"/>
               <span class="checkbox-indicator"></span>
               сахарные присыпки
@@ -221,7 +221,7 @@
           </li>
 
           <li>
-            <label class="checkbox-fill">
+            <label class="checkbox-fill" tabindex="0">
              <input type="checkbox" id="fruit-fill" name="fruit-fill" value="fruit-fill" class="visually-hidden"/>
              <span class="checkbox-indicator"></span>
              фрукты
@@ -229,7 +229,7 @@
          </li>
 
          <li>
-          <label class="checkbox-fill">
+          <label class="checkbox-fill" tabindex="0">
            <input type="checkbox" id="syrup-fill" name="syrup-fill" value="syrup-fill" class="visually-hidden"/>
            сиропы
            <span class="checkbox-indicator"></span>
@@ -237,7 +237,7 @@
        </li>
 
        <li>
-        <label class="checkbox-fill">
+        <label class="checkbox-fill" tabindex="0">
          <input type="checkbox" id="jam-fill" name="jam-fill" value="jam-fill" class="visually-hidden"/>
          джемы
          <span class="checkbox-indicator"></span>
@@ -253,128 +253,128 @@
 
 <section class="assortment">
 
-  <article class="assortment-item">
+  <article class="assortment-item" tabindex="0">
     <div class="assortment_img-price-box">
       <img src="img/creamy-orange.jpg" width="267" height="267" alt="Сливочное с апельсином">
-      <span class="assortment_price">310&#8381/кг</span>
+      <span class="assortment_price">310&#8381;<b>/кг</b></span>
     </div>
 
     <a href="#" class="assortment_descr">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
     <a href="#" class="btn">Быстрый просмотр</a>
   </article>
 
-  <article class="assortment-item">
+  <article class="assortment-item" tabindex="0">
     <div class="assortment_img-price-box">
       <img src="img/creamy-choco.jpg" width="267" height="267" alt="Сливочно-кофейное">
-      <span class="assortment_price">380&#8381/кг</span>
+      <span class="assortment_price">380&#8381;<b>/кг</b></span>
     </div>
 
     <a href="#" class="assortment_descr">Сливочно-кофейное с кусочками шоколада</a>
     <a href="#" class="btn">Быстрый просмотр</a>
   </article>
 
-  <article class="assortment-item">
+  <article class="assortment-item" tabindex="0">
     <div class="assortment_img-price-box">
       <img src="img/creamy-strawberry.jpg" width="267" height="267" alt="Сливочно-клубничное">
-      <span class="assortment_price">355&#8381/кг</span>
+      <span class="assortment_price">355&#8381;<b>/кг</b></span>
     </div>
 
     <a href="#" class="assortment_descr">Сливочно-клубничное с присыпкой из белого шоколада</a>
     <a href="#" class="btn">Быстрый просмотр</a>
   </article>
 
-  <article class="assortment-item">
+  <article class="assortment-item" tabindex="0">
     <div class="assortment_img-price-box">
       <img src="img/creme-brulee.jpg" width="267" height="267" alt="Крем-брюле">
-      <span class="assortment_price">415&#8381/кг</span>
+      <span class="assortment_price">415&#8381;<b>/кг</b></span>
     </div>
 
     <a href="#" class="assortment_descr">Сливочное крем-брюле с карамельной подливкой</a>
     <a href="#" class="btn">Быстрый просмотр</a>
   </article>
 
-  <article class="assortment-item">
+  <article class="assortment-item" tabindex="0">
     <div class="assortment_img-price-box">
       <img src="img/creamy-cowberry.jpg" width="267" height="267" alt="Сливочное с брусничным
       джемом">
-      <span class="assortment_price">325&#8381/кг</span>
+      <span class="assortment_price">325&#8381;<b>/кг</b></span>
     </div>
 
     <a href="#" class="assortment_descr">Сливочное с брусничным джемом </a>
     <a href="#" class="btn">Быстрый просмотр</a>
   </article>
 
-  <article class="assortment-item">
+  <article class="assortment-item" tabindex="0">
     <div class="assortment_img-price-box">
 
       <img src="img/creamy-bilberry.jpg" width="267" height="267" alt="Сливочно-черничное">
-      <span class="assortment_price">410&#8381/кг</span>
+      <span class="assortment_price">410&#8381;<b>/кг</b></span>
     </div>
 
     <a href="#" class="assortment_descr">Сливочно-черничное с цельными ягодами черники</a>
     <a href="#" class="btn">Быстрый просмотр</a>
   </article>
 
-  <article class="assortment-item">
+  <article class="assortment-item" tabindex="0">
     <div class="assortment_img-price-box">
 
       <img src="img/creamy-lemon.jpg" width="267" height="267" alt="Сливочно-лимонное">
-      <span class="assortment_price">375&#8381/кг</span>
+      <span class="assortment_price">375&#8381;<b>/кг</b></span>
     </div>
 
     <a href="#" class="assortment_descr">Сливочно-лимонное с карамельной присыпкой</a>
     <a href="#" class="btn">Быстрый просмотр</a>
   </article>
 
-  <article class="assortment-item">
+  <article class="assortment-item" tabindex="0">
     <div class="assortment_img-price-box">
       <img src="img/choco-chips.jpg" width="267" height="267" alt="Сливочное с шоколадной
       стружкой">
-      <span class="assortment_price">320&#8381/кг</span>
+      <span class="assortment_price">320&#8381;<b>/кг</b></span>
     </div>
 
     <a href="#" class="assortment_descr">Сливочное с шоколадной стружкой</a>
     <a href="#" class="btn">Быстрый просмотр</a>
   </article>
 
-  <article class="assortment-item">
+  <article class="assortment-item" tabindex="0">
     <div class="assortment_img-price-box">
 
       <img src="img/creamy-vanilla.jpg" width="267" height="267" alt="Сливочно-ванильное">
-      <span class="assortment_price">440&#8381/кг</span>
+      <span class="assortment_price">440&#8381;<b>/кг</b></span>
     </div>
 
     <a href="#" class="assortment_descr">Сливочно-ванильное с кусочками шоколада</a>
     <a href="#" class="btn">Быстрый просмотр</a>
   </article>
 
-  <article class="assortment-item">
+  <article class="assortment-item" tabindex="0">
     <div class="assortment_img-price-box">
 
       <img src="img/creamy-menthol.jpg" width="267" height="267" alt="Сливочно-ментоловое">
-      <span class="assortment_price">435&#8381/кг</span>
+      <span class="assortment_price">435&#8381;<b>/кг</b></span>
     </div>
 
     <a href="#" class="assortment_descr">Сливочноe с ментоловым сиропом</a>
     <a href="#" class="btn">Быстрый просмотр</a>
   </article>
 
-  <article class="assortment-item">
+  <article class="assortment-item" tabindex="0">
     <div class="assortment_img-price-box">
       <img src="img/creamy-oreo.jpg" width="267" height="267" alt="Сливочное с кусочками
       шоколада">
-      <span class="assortment_price">355&#8381/кг</span>
+      <span class="assortment_price">355&#8381;<b>/кг</b></span>
     </div>
 
     <a href="#" class="assortment_descr">Сливочное с кусочками черного шоколада</a>
     <a href="#" class="btn">Быстрый просмотр</a>
   </article>
 
-  <article class="assortment-item">
+  <article class="assortment-item" tabindex="0">
     <div class="assortment_img-price-box">
       <img src="img/creamy-mint.jpg" width="267" height="267" alt="Сливочное с мятным сиропом"
       >
-      <span class="assortment_price">420&#8381/кг</span>
+      <span class="assortment_price">420&#8381;<b>/кг</b></span>
     </div>
 
     <a href="#" class="assortment_descr">Сливочное с мятным сиропом</a>
@@ -387,7 +387,7 @@
   <div class="container">
     <ul class="page-number">
       <li><a><span class="visually-hidden">Назад</span> </a></li>
-      <li><a href="#">1</a></li>
+      <li class="page-number--active"><a href="#">1</a></li>
       <li><a href="#">2</a></li>
       <li><a href="#">3</a></li>
       <li><a href="#">4</a></li>
