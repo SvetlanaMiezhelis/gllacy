@@ -1075,6 +1075,7 @@ body {
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 .assortment-item {
   color: #fff;
